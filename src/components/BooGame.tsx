@@ -131,7 +131,7 @@ export default function MarioGhostHouseClassic() {
   const [invincible, setInvincible] = useState(false)
   const [collectedTestimonials, setCollectedTestimonials] = useState<TestimonialData[]>([])
   const [hitEffect, setHitEffect] = useState<{x: number, y: number, show: boolean}>({x: 0, y: 0, show: false})
-  const animationFrame = useRef<number>()
+  const animationFrame = useRef<number>(0)
 
   const GOAL_X = WORLD_WIDTH - 300
 
